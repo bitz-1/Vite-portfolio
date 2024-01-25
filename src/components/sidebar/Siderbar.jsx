@@ -1,14 +1,37 @@
+import { useState } from "react";
 import "../../scss/siderbar.scss"
 import Links from "./Links";
-import ToggleBar from "./ToggleButton";
+import ToggleButton from "./ToggleButton";
+import {motion} from "framer-motion";
 const Siderbar = () => {
+  const [open,setOpen] = useState(false);
+
+  const variants = {
+    open:{
+      clipPath: "circle(1200px at 50px 50px",
+      transition:{
+        type:"spring",
+        stiffness:20,
+      }
+    },
+    closed:{
+      clipPath:"circle(30px at 50px 50px)",
+      transition:{
+        delay:0.5,
+        type:"spring",
+        stiffness:400,
+        damping:40,
+      }
+    }
+    
+  }
   return (
-    <div className="sidebar">
-        <div className="bg">
+    <motion.div className="siderbar" animate={open ? "open" : "closed" }>
+        <motion.div className="bg" variants={variants}>
             <Links/>
-        </div>
-        <ToggleBar/>
-    </div>
+        </motion.div>
+        <ToggleButton setOpen={setOpen}/>
+    </motion.div>
 
   )
 }

@@ -1,3 +1,46 @@
-.sidebar{
+.siderbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0C090A;
+    color: #fefefe;
     
-}
+    .bg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 400px;
+        background: #0C090A;
+        
+        .links{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap:20px;
+
+            a{
+                font-size: 40px;
+            }
+        }
+    }
+
+    button{
+        color:#fefefe;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: fixed;
+        top: 25px;
+        left: 25px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    
+    }
+ }

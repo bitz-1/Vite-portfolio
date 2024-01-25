@@ -4,7 +4,6 @@ import Siderbar from "../sidebar/Siderbar";
 const Navbar = () =>{
     return (
         <div className="navbar">
-            {/* sidebar */}
             <Siderbar/>
             <div className="wrapper"> 
             <motion.span
