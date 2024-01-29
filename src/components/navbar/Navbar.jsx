@@ -13,10 +13,10 @@ const Navbar = () =>{
               BitzTech Dev
             </motion.span>
                 <div className="social">
-                <a href="#"><img src="/discord.png" alt="discord"/></a>
-                <a href="#"><img src="/github-logo.png" alt="github"/></a>
-                <a href="#"><img src="/linkedin-logo.png" alt="linkedin"/></a>
-                <a href="#"><img src="/twitter.png" alt="twitter"/></a>
+                <motion.a whileHover={{scale:1.1}}href="#"><img src="/discord.png" alt="discord"/></motion.a>
+                <motion.a whileHover={{scale:1.1}} href="#"><img src="/github-logo.png" alt="github"/></motion.a>
+                <motion.a whileHover={{scale:1.1}}href="#"><img src="/linkedin-logo.png" alt="linkedin"/></motion.a>
+                <motion.a whileHover={{scale:1.1}} href="#"><img src="/twitter.png" alt="twitter"/></motion.a>
                 </div>
             </div>
         </div>
