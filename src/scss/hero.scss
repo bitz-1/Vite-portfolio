@@ -32,6 +32,8 @@
             justify-content: center;
             gap:40px; 
             z-index: 2;
+
+
            
             
             h2{
@@ -43,6 +45,8 @@
 
             h1{
                 font-size: 88px;
+
+               
             }
             
             .buttons{
@@ -69,6 +73,7 @@
                 margin-left: 150px;
                 display: flex;
                 z-index: 3;
+               
             }
 
             
@@ -85,7 +90,12 @@
         display: flex;
         justify-content: end;
         overflow: hidden;
-    }
+
     
-   
-}
+        }
+        img {
+           
+            object-fit: cover;
+            height: 100%;
+        }
+    }

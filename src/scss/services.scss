@@ -1,3 +1,4 @@
+
 .parentServices{
     background: linear-gradient(180deg , #a3a6a87a,#FFFFFF);
     height: 100%;
@@ -12,11 +13,11 @@
             align-self: flex-end;
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 10px;
     
             p{
                 font-weight: 200;
-                font-size: 20px;
+                font-size: 15px;
                 text-align: right;
             }
     
@@ -68,9 +69,9 @@
             margin: auto;
     
             .box{
-                margin-top: 20px;
+                margin-top: 15px;
                 padding: 50px;
-                border: 0.5px solid gray;
+                border: 0.2px solid gray;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;

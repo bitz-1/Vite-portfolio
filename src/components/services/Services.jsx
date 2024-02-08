@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import "../../scss/services.scss";
 import {motion , useInView} from "framer-motion";
 const variants = {
@@ -18,9 +19,14 @@ const variants = {
   };
 
 const Services = () => {
+    const ref = useRef();
+    const isInView = useInView(ref, {margin:"-100px"})
   return (
     <div className="parentServices">
-    <motion.div className="services" variants={variants} initial="initial" whileInView="animate">
+    <motion.div className="services" variants={variants} initial="initial"
+    //  whileInView="animate" 
+    ref={ref}
+    animate={'animate'}>
         <motion.div className="textContainer"variants={variants}>
        
          <p>Focus on helping your brand <br/> grow and move forward </p>
@@ -45,42 +51,39 @@ const Services = () => {
         </motion.div>
         <motion.div className="listContainer">
             <motion.div className="box" whileHover={{background:"lightgray"}}>
-                <h2>Branding</h2>
+                <h2>Web Development</h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Odio dolores optio, facere corporis autem rerum 
-                    dignissimos natus, modi placeat quam voluptate voluptatum sint earum, 
-                    at quo recusandae libero eum? Illo!
+                As a Full-stack web developer, I'am proficient in both front-end and back-end development. 
+                I can create responsive and user-friendly websites , web and Mobile applications  using technologies like HTML, CSS, 
+                JavaScript, React.js , React Native for the front end, and Node.js for the back end.
                 </p>
                 <button> Go</button>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgray"}} >
-                <h2>Branding</h2>
+                <h2>Database Management</h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Odio dolores optio, facere corporis autem rerum 
-                    dignissimos natus, modi placeat quam voluptate voluptatum sint earum, 
-                    at quo recusandae libero eum? Illo!
+                Being a Full-stack developer i'am  capable of designing and managing databases. That can work with both SQL
+                (e.g., MySQL, PostgreSQL) and NoSQL (e.g., MongoDB, Firebase) databases and design database schemas, write queries, and
+                ensure efficient data storage and retrieval.
                 </p>
                 <button> Go</button>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgray"}}>
-                <h2>Branding</h2>
+                <h2>API Development</h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Odio dolores optio, facere corporis autem rerum 
-                    dignissimos natus, modi placeat quam voluptate voluptatum sint earum, 
-                    at quo recusandae libero eum? Illo!
+                Creating APIs (Application Programming Interfaces) for communication between the front
+                end and back end of web applications. I design RESTful or GraphQL APIs, define endpoints, handle authentication and authorization,
+                and ensure secure data exchange between the client-side and server-side of the application.
                 </p>
                 <button> Go</button>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgray"}}>
-                <h2>Branding</h2>
+                <h2>Deployment and DevOps</h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Odio dolores optio, facere corporis autem rerum 
-                    dignissimos natus, modi placeat quam voluptate voluptatum sint earum, 
-                    at quo recusandae libero eum? Illo!
+                Being a Full-stack developer i often responsible for deploying applications to production environments.
+                and configure servers, manage hosting services (e.g., AWS, Azure, Google Cloud), set up continuous integration
+                and continuous deployment (CI/CD) pipelines,
+                monitor application performance, and ensure scalability and reliability of the deployed applications.
                 </p>
                 <button> Go</button>
             </motion.div>

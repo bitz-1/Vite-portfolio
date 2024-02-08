@@ -50,8 +50,8 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>APURV NANDGAONKAR</motion.h2>
           <motion.h1 variants={textVariants}><span style={{color:'#5b6e74'}}>Software Engineer</span> | Full-Stack Web Developer \- </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <button variants={textVariants}>See the Latest Work</button>
-            <button variants={textVariants}>Contact Me</button>
+            <motion.button whileHover={{scale:1.1}} variants={textVariants}>See the Latest Work</motion.button>
+            <a href="#Contact"><motion.button  whileHover={{scale:1.1}} variants={textVariants}>Contact Me</motion.button></a>
           </motion.div>
             <motion.img  variants={textVariants} animate="scrollButton" src="/scroll.png"/>
           </motion.div>

@@ -1,6 +1,9 @@
+
 .navbar{
 height: 100px;
 .wrapper{
+
+
     max-width: 1366px;
     margin: auto;
     display: flex;
@@ -8,16 +11,25 @@ height: 100px;
     justify-content: space-between;
     height: 100%;
 
+  
+
     span{
         font-weight:bold;
+        
+     
+        
+       
+        
     }
     .social{
         display: flex;
         gap:20px;
-
+       
         img{
+           
             width: 25px;
             height:25px;
+           
         }
     }
 }
