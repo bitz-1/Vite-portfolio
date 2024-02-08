@@ -1,5 +1,5 @@
 import "../src/scss/app.scss"
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import Contact from "./components/contact/Contact";
 import Hero from "./components/hero/hero";
 import Parallax from "./components/parallax/Parallax";
