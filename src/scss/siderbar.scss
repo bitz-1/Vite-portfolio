@@ -55,3 +55,21 @@
     
     }
  }
+
+ 
+  // Mobile Responsive Styles
+  @media screen and (max-width: 768px) {
+    .siderbar{
+    .bg {
+      width: 200px; // Adjusted width to fit smaller screens
+    }
+
+    .links {
+      gap: 10px; // Adjusted gap between links for smaller screens
+
+      a {
+        font-size: 14px; // Adjusted font size for links on smaller screens
+      }
+    }
+  }
+}

@@ -5,15 +5,22 @@
         position: sticky;
         top: 0;
         left:0;
-        padding-top: 50px;
-        text-align: center;
-        color:black;
+        padding-top: 20px;
+        text-align:right;
+        color:white;
         font-size: 36px;
-
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        background:linear-gradient(180deg,rgba(15, 15, 15, 0.973),rgb(0, 0, 0));
+            
         .progressBar{
             height: 10px;
             background-color:#5b6e74;
+            z-index: 1;
         }
+
+
 
     }
 
@@ -60,6 +67,7 @@
 
             h2{
                 font-size: 72px;
+                color: black;
             }
 
             p{
@@ -80,4 +88,68 @@
        }
     }
    
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio {
+        .progress {
+            padding-top: 30px; /* Adjusted padding top for mobile */
+            padding-bottom: 10px; /* Added padding bottom for mobile */
+            font-size: 14px; /* Decreased font size for mobile */
+        }
+
+        .container {
+            padding-top: 25%;
+
+
+            .wrapper {
+                flex-direction: column; /* Stack items vertically for mobile */
+                gap: 20px; /* Added gap between items for mobile */
+                
+                .imageContainer {
+                    width: 100%;
+                    max-height: 300px;
+                    img{
+                        
+                        object-fit: contain;
+                    }
+                }
+
+                .textContainer {
+                    text-align: center; /* Center align text for mobile */
+                    align-items: center; /* Center align text for mobile */
+                    gap: 15px; /* Added gap between text elements for mobile */
+                    padding: 15%; /* Added padding for better spacing */
+                    transform: none !important; /* Removed any transformations */
+                
+                    h2 {
+                        font-size: 32px; /* Decreased font size for heading */
+                        margin-bottom: 10px; /* Added margin bottom for separation */
+                    }
+                
+                    p {
+                        color: #555; /* Changed text color to a softer tone */
+                        font-size: 18px; /* Decreased font size for paragraph */
+                        line-height: 1.6; /* Increased line height for better readability */
+                    }
+                
+                    button {
+                        background-color: #5b6e74;
+                        color: white;
+                        border: none;
+                        border-radius: 10px;
+                        padding: 12px 24px; /* Increased padding for button */
+                        font-size: 16px; /* Decreased font size for button text */
+                        cursor: pointer;
+                        transition: background-color 0.3s ease; /* Added transition for smoother hover effect */
+                    }
+                
+                    button:hover {
+                        background-color: #476067; /* Darker shade for hover effect */
+                    }
+                }
+                
+        }
+    }
+    }
 }

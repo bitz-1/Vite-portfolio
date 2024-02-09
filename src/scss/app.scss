@@ -25,17 +25,15 @@ section{
     scroll-snap-align: center;
 }
 
-// Mobile Responsive Styles
-// Mobile Responsive Styles
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 540px) {
     html {
-      font-size: 14px; // Adjust font size for smaller screens
+      font-size: 16px; // Adjust font size for smaller screens
     }
     
     section {
-      height: 160vh; // Adjust section height to fit content
+      height: auto; // Adjust section height to fit content
       scroll-snap-align: start; // Change snap align for smaller screens if needed
-      width: 140vh; // Set width to half of viewport width
       margin: 0 auto; // Center the section horizontally
+      
     }
   }

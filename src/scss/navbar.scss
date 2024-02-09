@@ -35,3 +35,22 @@ height: 100px;
     }
 }
 }
+
+ // Mobile Responsive Styles
+ @media screen and (max-width: 768px) {
+    .wrapper {
+      margin-left: 5%; // Adjusted margin for smaller screens
+      height: auto; // Adjusted height to auto for smaller screens
+
+      span {
+        margin-top: 10px; // Added margin bottom for spacing between elements
+        flex-direction: column;
+        display: flex;
+      }
+
+      .social {
+        margin-top: 10px; // Added margin top for spacing between elements
+        padding:20px;
+      }
+    }
+  }

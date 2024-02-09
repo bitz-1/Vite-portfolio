@@ -67,14 +67,19 @@
             display: flex;
             max-width: 1366px;
             margin: auto;
-    
-            .box{
-                margin-top: 15px;
-                padding: 50px;
-                border: 0.2px solid gray;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+            padding: 20px; // Add padding for spacing
+            justify-content: center; // Center align content horizontally
+            
+            .box {
+              width: 80%; // Adjust box width to fit smaller screens
+              max-width: 300px; // Set max-width for box
+              margin-top: 15px; // Add margin-top for spacing
+              padding: 20px; // Add padding inside the box
+              border: 1px solid gray; // Add border for decoration
+              border-radius: 10px; // Add border radius for rounded corners
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
     
                 button{
                     padding: 10px;
@@ -91,4 +96,76 @@
     }
 
 }
+@media screen and (max-width: 768px) {
+    .parentServices {
+      .services {
+        flex-direction: column; // Stack elements vertically on smaller screens
+  
+        .textContainer {
+          align-self: center; // Center align text container
+          text-align: center; // Center align text
+
+          hr{
+           width:100px;
+           max-width: 300px;
+           margin: 20px auto;
+          }
+        }
+  
+        .titleContainer {
+          .title {
+            gap: 20px; // Adjust gap between elements
+            flex-direction: column; // Stack elements vertically
+            align-items: center; // Center align items
+            text-align: center; // Center align text
+            padding: 20px; // Add padding for spacing
+  
+            img {
+              width:300px; // Adjust image width to fit smaller screens
+              max-width: 300px; // Set max-width for image
+              height: 100px; // Maintain aspect ratio
+            }
+  
+            h1 {
+              font-size: 48px; // Adjust font size for smaller screens
+            }
+  
+            button {
+              width: 50%; // Adjust button width to fit smaller screens
+              max-width: 300px; // Set max-width for button
+              height: auto; // Maintain aspect ratio
+              margin-top: 20px; // Add margin for spacing
+            }
+          }
+        }
+  
+        .listContainer {
+            padding: 20px; // Add padding for spacing
+            display: flex;
+            flex-direction: column;
+            align-items: center; // Center align items horizontally
+            justify-content: center; // Center align content vertically
+            margin-top: 20px; // Add margin for spacing
+            
+            .box {
+              width: 80%; // Adjust box width to fit smaller screens
+              max-width: 300px; // Set max-width for box
+              margin-bottom: 20px; // Add margin for spacing between boxes
+              padding: 20px; // Add padding inside the box
+              border: 1px solid #ccc; // Add border for decoration
+              border-radius: 10px; // Add border radius for rounded corners
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Add box shadow for depth effect
+              
+              &:last-child {
+                margin-bottom: 0; // Remove margin from the last box to avoid extra space
+              }
+            }
+          }
+      }
+    }
+  }
+  
+
+
+
 

@@ -35,3 +35,26 @@
     }
    
 }
+
+// Mobile Responsive Styles
+@media screen and (max-width: 768px) { 
+    .parallax{
+    h1 {
+      font-size: 50px; // Adjusted font size for smaller screens
+      margin-top:95%;
+    }
+
+    .coffee {
+      width: 25%; // Adjusted width for smaller screens
+      height: 30%; // Adjusted height for smaller screens
+      left: 5%; // Adjusted position for smaller screens
+    }
+
+    .macbook {
+      width: 60%; // Adjusted width for smaller screens
+      height: 30%; // Adjusted height for smaller screens
+      right: 5%; // Adjusted position for smaller screens
+      
+    }
+  }
+}

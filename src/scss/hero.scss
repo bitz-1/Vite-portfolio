@@ -100,3 +100,63 @@
             height: 100%;
         }
     }
+
+// Mobile Responsive Styles
+
+@media screen and (max-width: 768px) {
+    .hero {
+      height: auto;
+      padding-top: 50px;
+
+      .wrapper {
+        max-width: 90%;
+        margin-left: 5%;
+
+        .slidingTextContainer {
+          display: none;
+        }
+
+        .textContainer {
+          width: 100%;
+          padding: 0 20px;
+
+          h2 {
+            font-size: 20px;
+            letter-spacing: 5px;
+          }
+
+          h1 {
+            font-size: 48px;
+          }
+
+          .buttons {
+            flex-direction: column;
+            align-items: center;
+
+            button {
+              margin: 10px 0;
+            }
+          }
+
+          img {
+            width: 50%; // Adjusted width for mobile screens
+            margin: 20px 0; // Adjusted margin for mobile screens
+            align-self: center;
+          }
+        }
+      }
+
+      .imageContainer {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 300px;
+        width: 200px;
+        top:unset;
+        bottom: 0;
+
+       
+
+      }
+    }
+}
