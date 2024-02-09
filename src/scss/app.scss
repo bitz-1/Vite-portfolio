@@ -37,3 +37,16 @@ section{
       
     }
   }
+
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 16px; // Adjust font size for smaller screens
+    }
+    
+    section {
+      height: auto; // Adjust section height to fit content
+      scroll-snap-align: start; // Change snap align for smaller screens if needed
+      margin: 0 auto; // Center the section horizontally
+      
+    }
+  }

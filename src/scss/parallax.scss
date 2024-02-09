@@ -58,3 +58,21 @@
     }
   }
 }
+
+@media screen and (min-width: 820px) and (max-width: 1366px){
+  .parallax{
+    h1{
+      font-size: 70px;
+    }
+
+    .coffee{
+      width: 25%;
+      left: 2%;
+    }
+    .macbook{
+      width: 70%;
+      height: 30%;
+      right: 5%;
+    }
+  }
+}

@@ -6,14 +6,14 @@ const items = [
   {
     id: 1,
     title: "ERS",
-    img: "./ERS.gif",
-    desc: " This is a full-stack web application called Employee Review System (ERS). Built using Node.js, Express.js, MongoDB, Passport.js, and Passport-local for authentication The application follows the MVC structure.",
+    img: "./ers.jpg",
+    desc: " This is a full-stack web application called Employee Review System (ERS). Built using Node.js, Express.js, MongoDB, Passport.js, and Passport-local for authentication The application follows the MVC structure.Password for new Admin - ghostAplha",
     href:"https://git-bitz-ers.onrender.com/",
   },
   {
     id: 2,
     title: "IssueTracker",
-    img: "./issuetracker.gif",
+    img: "./issue.png",
     desc: "Issue Tracker web application built using Node.js. The application allows users to track and manage issues or tasks within a project. The application follows the MVC structure.",
     href:"https://github-bitz-issuetracker.onrender.com/"
   },
@@ -26,10 +26,10 @@ const items = [
   },
   {
     id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  },
+    title: "Krimfy",
+    img: "./music.jpg",
+    desc: "Music App - comming soon",
+  }
 ];
 
 const Single = ({ item }) => {

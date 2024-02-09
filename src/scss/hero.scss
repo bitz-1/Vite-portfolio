@@ -160,3 +160,23 @@
       }
     }
 }
+@media screen and (min-width: 820px) and (max-width: 1366px) {
+    .hero{
+
+      .textContainer{
+        
+
+      }
+      
+      .imageContainer {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 800px;
+        width: 500px;
+        top:unset;
+        bottom: 0;
+
+    }
+  }
+}
