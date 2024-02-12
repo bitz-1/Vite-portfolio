@@ -1,8 +1,10 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio - Apurv Nandgaonkar
+This is a portfolio website built using React.js, JavaScript, and SCSS. It showcases my projects, skills, and contact information.
 
-Currently, two official plugins are available:
+License
+This project is licensed under the MIT License.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Author
+Apurv Nandgaonkar
+Email: bitztechdev@gmail.com

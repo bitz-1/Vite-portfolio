@@ -1,5 +1,6 @@
 import "../../scss/hero.scss";
 import {motion} from "framer-motion";
+import {Link} from "react-router-dom";
 const textVariants = {
   initial : {
     x: -500,
@@ -50,7 +51,9 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>APURV NANDGAONKAR</motion.h2>
           <motion.h1 variants={textVariants}><span style={{color:'#5b6e74'}}>Software Engineer</span> | Full-Stack Web Developer \- </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button whileHover={{scale:1.1}} variants={textVariants}>See the Latest Work</motion.button>
+            <Link to="/Latest-work">
+           <motion.button whileHover={{scale:1.1}} variants={textVariants}>See the Latest Work</motion.button>
+           </Link>
             <a href="#Contact"><motion.button  whileHover={{scale:1.1}} variants={textVariants}>Contact Me</motion.button></a>
           </motion.div>
             <motion.img  variants={textVariants} animate="scrollButton" src="/scroll.png"/>

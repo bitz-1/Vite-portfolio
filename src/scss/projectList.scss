@@ -1,0 +1,14 @@
+.projectlist{
+    
+    font-size: 30px;
+    margin-right:60px;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &.active{
+        background-color: black;
+        color: white;
+    }
+
+}
