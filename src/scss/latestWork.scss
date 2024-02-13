@@ -3,6 +3,7 @@
 .latestWork{
     background: linear-gradient(180deg,#FFFFFF,#8f9295d2);
     height: 100vh;
+   
     h1{
         align-items: center;
         text-align: center;
@@ -79,4 +80,23 @@
 
    
  
+}
+
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .latestWork{
+        height: auto;
+        width: 100%;
+    }
+    
+    
+    .works .container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .latestWork .works .container .item {
+        width: 100%; /* Adjust width of items for smaller screens */
+        height: auto; /* Let height be determined by content */
+    }
 }
