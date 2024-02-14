@@ -1,4 +1,4 @@
-import "../../scss/DisplayComponent.scss"
+import "../../scss/displayComponent.scss"
 
 function DisplayComponent({ data }) {
     return (
