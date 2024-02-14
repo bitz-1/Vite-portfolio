@@ -8,6 +8,9 @@ import {
   Route,
 } from "react-router-dom";
 
+
+
+
 const router = createBrowserRouter([
   {
     path:"/",
@@ -17,6 +20,7 @@ const router = createBrowserRouter([
     path:"/Latest-work",
     element:<LatestWork/>,
   },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

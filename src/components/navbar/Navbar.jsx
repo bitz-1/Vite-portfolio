@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Navbar = () =>{
     const location = useLocation();
     //
-    const isLatestWork = location.pathname === "/Latest-work";  
+    const isLatestWork = location.pathname === "/Latest-work";
     return (
         <div className="navbar">
             {!isLatestWork && <Siderbar/>}
