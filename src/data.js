@@ -221,5 +221,154 @@ export const featuredData = [
     title:"HTML-5",
     img:"./html.png"
    },
+   {
+    id:2,
+    title:"CSS-3",
+    img:"./css.png"
+   },
+   {
+    id:3,
+    title:"Sass",
+    img:"./sass.png"
+   },
+   {
+    id:4,
+    title:"JScrpit",
+    img:"./javascript.png"
+   }, {
+    id:5,
+    title:"React",
+    img:"./react.png"
+   },
+   {
+    id:6,
+    title:"Framer",
+    img:"./framer.png"
+   },
+   {
+    id:7,
+    title:"Tailwind",
+    img:"./tailwind-css.png"
+   },
+   {
+    id:8,
+    title:"Grunt",
+    img:"./grunt.png"
+   },
+   {
+    id:9,
+    title:"Redux",
+    img:"./redux.png"
+   },
+
   ]
+
+  export const BackendData =[
+    {
+     id:1,
+     title:"Node.js",
+     img:"./nodejs.png"
+    },
+    {
+      id:2,
+      title:"Express",
+      img:"./express.png"
+     },
+     {
+      id:3,
+      title:"Redis",
+      img:"./redis.png"
+     },
+     {
+      id:4,
+      title:"MongoDB",
+      img:"./mongodb.png"
+     },
+     {
+      id:5,
+      title:"Firebase",
+      img:"./firebase.png"
+     },
+     {
+      id:6,
+      title:"Postgresql",
+      img:"./postgresql.png"
+     },
+     {
+      id:7,
+      title:"Passport",
+      img:"./passport.png"
+     },
+     {
+      id:8,
+      title:"Postman",
+      img:"./postman.png"
+     },
+     {
+      id:9,
+      title:"Socket",
+      img:"./socket.png"
+     },
+   
+   
+   
+   
+  ]
+
+  export const DevOpsData =[
+    {
+      id:1,
+      title:"AWS",
+      img:"./aws.png"
+    },
+    {
+      id:2,
+      title:"GIT",
+      img:"./git.png"
+    },{
+      id:3,
+      title:"Github",
+      img:"./github.png"
+    },{
+      id:4,
+      title:"Docker",
+      img:"./docker.png"
+    },{
+      id:5,
+      title:"Kubernets",
+      img:"./kubernets.png"
+    },{
+      id:6,
+      title:"prometheus",
+      img:"./prometheus.png"
+    },
+      {
+        id:7,
+        title:"Jenkins",
+        img:"./jenkins.png"
+      },
+      {
+        id:8,
+        title:"Ansible",
+        img:"./ansible.png"
+      },
+      {
+        id:8,
+        title:"Terraform",
+        img:"./terraform.png"
+      },
   
+  ]
+
+  export const DevSecOpsData =[
+    {
+      id:1,
+      title:"Sonarqub",
+      img:"./sonarqub.png"
+    },
+    {
+      id:1,
+      title:"Owasp ZAP",
+      img:"./owaspzap.png"
+    },
+  ]

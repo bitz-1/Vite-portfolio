@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import "../../scss/about.scss";
 import SkillsList from './SkillsList';
-import { FrontendData } from '../../data';
+import { FrontendData, BackendData , DevOpsData, DevSecOpsData } from '../../data';
 
 const About = () => {
-    const [selected,setSelected] = useState(null);
+    const [selected,setSelected] = useState({});
     const [data , setData] = useState([]);
 
     const skillList =[
@@ -26,12 +26,28 @@ const About = () => {
         }
     ]
 
+    
+
     useEffect(() => {
         switch(selected) {
             case "frontend":
                setData(FrontendData);
+               break;
+               case "backend":
+                setData(BackendData);
+                break;
+                case "devops":
+                  setData(DevOpsData);
+                  break;
+                case "devsecops":
+                  setData(DevSecOpsData);
+                  break;
+              default: 
+              setData(FrontendData);
+
         }
     },[selected]);
+   
 
   return (
     <div className='aboutSkill'>
@@ -58,11 +74,12 @@ const About = () => {
                active={selected === skill.id}
                setSelected = {setSelected}
                id = {skill.id}
+               key ={skill.id}
             />
           ))}
           <div className='listContainer'>
             {data.map((d) => (
-              <ul className='item' >
+              <ul className='item' key={d.id} >
                 <h6><img src={d.img}/>{d.title}</h6>
               </ul>
             ))}
