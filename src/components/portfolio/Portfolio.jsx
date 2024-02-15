@@ -26,10 +26,17 @@ const items = [
   },
   {
     id: 4,
+    title: "AutoID",
+    img: "./AutoID.png",
+    desc: "AUTOID is a full-stack Decentralized supply-chain web application using local blockchain network with deployed smart contract . Built using Node.js , PHP, Mysql,Web3.js,Solidity,Qrious,Ganache,Metamask for wallet transactions. The Application list products with unique barcode with location and update as it pass it on to next chain .",
+    href:"https://github.com/bitz-1/DAPP"
+  },
+  {
+    id: 5,
     title: "Krimfy",
     img: "./music.jpg",
     desc: "Music App - comming soon",
-  }
+  },
 ];
 
 const Single = ({ item }) => {

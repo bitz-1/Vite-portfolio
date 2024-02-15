@@ -5,6 +5,7 @@ import Hero from "./components/hero/Hero";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
+import About from "./components/about/About";
 
 
 const App = () => {
@@ -25,6 +26,9 @@ const App = () => {
     <Portfolio/>
     <section id="Contact">
       <Contact/>
+    </section>
+    <section id="About">
+      <About/> 
     </section>
     
   </div> 

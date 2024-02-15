@@ -1,33 +1,37 @@
 export const featuredData = [
     {
       id: 1,
-      title: "Social Media App",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      gitref:"https://github.com/bitz-1/Vite-portfolio",
-      hosted:"https://www.google.com/",
+      title: "ERS",
+      img: "./ers.jpg",
+      description: "This is a full-stack web application called Employee Review System (ERS). Built using Node.js, Express.js, MongoDB, Passport.js, and Passport-local for authentication The application follows the MVC structure.Password for new Admin - ghostAplha",
+      gitref:"https://github.com/bitz-1/ERS_system",
+      hosted:"https://git-bitz-ers.onrender.com",
     
     },
     {
       id: 2,
-      title: "Rampa UI Design",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      img: "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+      title: "IssueTracker",
+      img: "./issue.png",
+      description: "Issue Tracker web application built using Node.js. The application allows users to track and manage issues or tasks within a project. The application follows the MVC structure.",
+      gitref:"https://github.com/bitz-1/issueTracker",
+      hosted:"https://github-bitz-issuetracker.onrender.com",
+      
     },
     {
       id: 3,
-      title: "E-commerce Web Design",
-      img:
-        "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-
+      title: "MovieAppCineFlex",
+      img:"./cineflex.gif",
+      description: "Cine-Flex Web application built using Node.js. The application allows users to search movies Through rest API from movie db..",
+      gitref:"https://github.com/bitz-1/movieAppCineflex",
+      hosted:"https://bitz-1.github.io/movieAppCineflex/"
     },
     {
       id: 4,
-      title: "Relax Mobile App",
-      img:
-        "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      title: "AutoID",
+      img:"./AutoID.png",
+      description: "AUTOID is a full-stack Decentralized supply-chain web application using local blockchain network with deployed smart contract . Built using Node.js , PHP, Mysql,Web3.js,Solidity,Qrious,Ganache,Metamask for wallet transactions. The Application list products with unique barcode with location and update as it pass it on to next chain .",
+      gitref:"https://github.com/bitz-1/DAPP",
+      hosted:"https://github.com/bitz-1/DAPP"
     },
     {
       id: 5,
@@ -46,23 +50,37 @@ export const featuredData = [
   export const webData = [
     {
       id: 1,
-      title: "Web Social Media App",
-      img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+      title: "ERS",
+      img: "./ers.jpg",
+      description: "This is a full-stack web application called Employee Review System (ERS). Built using Node.js, Express.js, MongoDB, Passport.js, and Passport-local for authentication The application follows the MVC structure.Password for new Admin - ghostAplha",
+      gitref:"https://github.com/bitz-1/ERS_system",
+      hosted:"https://git-bitz-ers.onrender.com",
+    
     },
     {
       id: 2,
-      title: "Web Rampa UI Design",
-      img: "https://cdn.dribbble.com/users/3967258/screenshots/15463803/media/4fddb9a2caf3b3bd634060f706a91e73.png?compress=1&resize=1200x900",
+      title: "IssueTracker",
+      img: "./issue.png",
+      description: "Issue Tracker web application built using Node.js. The application allows users to track and manage issues or tasks within a project. The application follows the MVC structure.",
+      gitref:"https://github.com/bitz-1/issueTracker",
+      hosted:"https://github-bitz-issuetracker.onrender.com",
+      
     },
     {
       id: 3,
-      title: "Web E-commerce Design",
-      img: "https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900",
+      title: "MovieAppCineFlex",
+      img:"./cineflex.gif",
+      description: "Cine-Flex Web application built using Node.js. The application allows users to search movies Through rest API from movie db..",
+      gitref:"https://github.com/bitz-1/movieAppCineflex",
+      hosted:"https://bitz-1.github.io/movieAppCineflex/"
     },
     {
       id: 4,
-      title: "Web Relax App",
-      img: "https://cdn.dribbble.com/users/2264844/screenshots/15463998/media/d85e92a332c41094f68e1f716884f7ce.jpg?compress=1&resize=1200x900",
+      title: "AutoID",
+      img:"./AutoID.png",
+      description: "AUTOID is a full-stack Decentralized supply-chain web application using local blockchain network with deployed smart contract . Built using Node.js , PHP, Mysql,Web3.js,Solidity,Qrious,Ganache,Metamask for wallet transactions. The Application list products with unique barcode with location and update as it pass it on to next chain .",
+      gitref:"https://github.com/bitz-1/DAPP",
+      hosted:"https://github.com/bitz-1/DAPP"
     },
     {
       id: 5,
@@ -163,9 +181,11 @@ export const featuredData = [
     },
     {
       id: 2,
-      title: "Content Rampa UI Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+      title: "AutoID",
+      img:"./AutoID.png",
+      description: "AUTOID is a full-stack Decentralized supply-chain web application using local blockchain network with deployed smart contract . Built using Node.js , PHP, Mysql,Web3.js,Solidity,Qrious,Ganache,Metamask for wallet transactions. The Application list products with unique barcode with location and update as it pass it on to next chain .",
+      gitref:"https://github.com/bitz-1/DAPP",
+      hosted:"https://github.com/bitz-1/DAPP"
     },
     {
       id: 3,
@@ -192,4 +212,14 @@ export const featuredData = [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
     },
   ];
+
+
+///skillDATA
+  export const FrontendData =[
+   {
+    id:1,
+    title:"HTML-5",
+    img:"./html.png"
+   },
+  ]
   

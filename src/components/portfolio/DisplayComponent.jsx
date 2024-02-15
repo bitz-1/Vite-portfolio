@@ -8,7 +8,7 @@ function DisplayComponent({ data }) {
             </a>
             <h2>{data.title}</h2>
             <img src={data.img}/>
-            <p>Description: {data.description}</p>
+            <p>Description:<br/> {data.description}</p>
             Add more details as needed
             <div className="buttons">
             <a href={data.gitref}>
