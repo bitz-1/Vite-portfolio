@@ -4,11 +4,11 @@ import "../../scss/latestWork.scss";
 import ProjectList from './ProjectList';
 import { featuredData, mobileData, webData, SaasData, businessData } from '../../data';
 import DisplayComponentPage from './DisplayComponentPage';
-import { Link } from 'react-router-dom';
+import { Link, json } from 'react-router-dom';
 const LatestWork = () => {
-    const [selected, setSelected] = useState("featured");
+    const [selected, setSelected] = useState(localStorage.getItem("selected") || "featured");
     const [data, setData] = useState([]);
-    const [selectedItemData, setSelectedItemData] = useState(null);
+    const [selectedItemData, setSelectedItemData] = useState(JSON.parse(localStorage.getItem("selectedItemData")) || null);
     const popDivRef = useRef(null);
 
     const list = [
@@ -55,6 +55,16 @@ const LatestWork = () => {
                 setData(featuredData);
         }
     }, [selected]);
+
+
+    useEffect(() => {
+        localStorage.setItem('selected', selected);
+    }, [selected]);
+
+    useEffect(() => {
+        localStorage.setItem("selectedItemData",JSON.stringify(selectedItemData));
+
+    },[selectedItemData])
 
     const handleItemClick = (itemData) => {
         // Set the selected item's data

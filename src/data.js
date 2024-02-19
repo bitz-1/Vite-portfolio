@@ -353,7 +353,7 @@ export const featuredData = [
         img:"./ansible.png"
       },
       {
-        id:8,
+        id:9,
         title:"Terraform",
         img:"./terraform.png"
       },
@@ -367,7 +367,7 @@ export const featuredData = [
       img:"./sonarqub.png"
     },
     {
-      id:1,
+      id:2,
       title:"Owasp ZAP",
       img:"./owaspzap.png"
     },

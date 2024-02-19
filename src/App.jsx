@@ -6,6 +6,7 @@ import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
 import About from "./components/about/About";
+import Footer from "./components/footer/Footer";
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
     <section id="About">
       <About/> 
     </section>
+    <Footer/>
     
   </div> 
   };

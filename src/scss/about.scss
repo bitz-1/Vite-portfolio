@@ -84,5 +84,59 @@
       
   
     }
+    
+  // Media query for small screens (up to 768px)
+  @media screen and (max-width: 768px) {
+    flex-direction: column; // Change to column layout for smaller screens
+    align-items: center; // Center items vertically
+
+    padding: 30px 10px; // Adjust padding for smaller screens
+
+    .about, .skill {
+      max-width: 100%; // Take full width on smaller screens
+      text-align: center; // Center text on smaller screens
+      padding: 0; // Remove padding for smaller screens
+      margin: 0 auto 20px; // Add margin at the bottom for spacing
+    }
+
+    .about {
+      h1 {
+        font-size: 40px; // Decrease font size for smaller screens
+        line-height: 48px; // Adjust line height accordingly
+      }
+
+      img {
+        width: 80px; // Decrease image size for smaller screens
+        margin-bottom: 10px; // Adjust margin for smaller screens
+      }
+
+      p {
+        font-size: 16px; // Decrease font size for smaller screens
+        line-height: 1.4; // Adjust line height accordingly
+      }
+    }
+
+    .skill {
+      h1, h2 {
+        font-size: 40px; // Decrease font size for smaller screens
+        line-height: 48px; // Adjust line height accordingly
+      }
+
+      .item {
+        margin: 10px 5px; // Adjust margin for smaller screens
+        padding: 10px;
+        h6 {
+          font-size: 14px; // Decrease font size for smaller screens
+        }
+
+        img {
+          width: 16px; // Decrease image size for smaller screens
+          height: 16px; // Decrease image size for smaller screens
+        }
+      }
+    }
   }
+  }
+  
+
   

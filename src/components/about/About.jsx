@@ -4,7 +4,7 @@ import SkillsList from './SkillsList';
 import { FrontendData, BackendData , DevOpsData, DevSecOpsData } from '../../data';
 
 const About = () => {
-    const [selected,setSelected] = useState({});
+    const [selected,setSelected] = useState(localStorage.getItem("selected") || "frontend");
     const [data , setData] = useState([]);
 
     const skillList =[
@@ -47,7 +47,11 @@ const About = () => {
 
         }
     },[selected]);
-   
+
+    useEffect(() => {
+                  localStorage.setItem('selected', selected);
+              }, [selected]);
+              
 
   return (
     <div className='aboutSkill'>

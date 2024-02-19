@@ -1,0 +1,32 @@
+.aboutfooter {
+    background: linear-gradient(180deg, #a3a6a87a, #FFFFFF);
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer {
+    margin-top: 50px;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .time-date {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .time-date p {
+    margin: 0 10px;
+  }
+  
+  /* Style the local time and IST date */
+  #local-time,
+  #ist-date {
+    font-weight: bold;
+  }
+  
