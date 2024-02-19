@@ -33,7 +33,8 @@ const Links = () => {
         "Services",
         "Portfolio",
         "Contact",
-        "About"
+        "About",
+        
     ]
   return (
     <motion.div className="links" variants={variants}>{items.map(item=>(
