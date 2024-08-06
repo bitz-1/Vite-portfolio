@@ -8,3 +8,5 @@ This project is licensed under the MIT License.
 Author
 Apurv Nandgaonkar
 Email: bitztechdev@gmail.com
+
+Hosted - https://www.bitzdev.tech/
