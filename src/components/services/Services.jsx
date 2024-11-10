@@ -55,9 +55,11 @@ const Services = () => {
                 <p>
                 As a Full-stack web developer, I'am proficient in both front-end and back-end development. 
                 I can create responsive and user-friendly websites , web and Mobile applications  using technologies like HTML, CSS, 
-                JavaScript, React.js , React Native for the front end, and Node.js for the back end.
+                JavaScript, React.js , React Native for the front end, and Django, Node.js for the back end.
                 </p>
-                <button> Go</button>
+                <a href="#Contact">
+                    <button>Go</button>
+                </a>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgray"}} >
                 <h2>Database Management</h2>
@@ -66,7 +68,9 @@ const Services = () => {
                 (e.g., MySQL, PostgreSQL) and NoSQL (e.g., MongoDB, Firebase) databases and design database schemas, write queries, and
                 ensure efficient data storage and retrieval.
                 </p>
-                <button> Go</button>
+                <a href="#Contact">
+                    <button>Go</button>
+                </a>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgray"}}>
                 <h2>API Development</h2>
@@ -75,7 +79,9 @@ const Services = () => {
                 end and back end of web applications. I design RESTful or GraphQL APIs, define endpoints, handle authentication and authorization,
                 and ensure secure data exchange between the client-side and server-side of the application.
                 </p>
-                <button> Go</button>
+                <a href="#Contact">
+                    <button>Go</button>
+                </a>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgray"}}>
                 <h2>Deployment and DevOps</h2>
@@ -85,7 +91,20 @@ const Services = () => {
                 and continuous deployment (CI/CD) pipelines,
                 monitor application performance, and ensure scalability and reliability of the deployed applications.
                 </p>
-                <button> Go</button>
+                <a href="#Contact">
+                    <button>Go</button>
+                </a>
+            </motion.div>
+            <motion.div className="box" whileHover={{background:"lightgray"}}>
+                <h2>Cyber Security Analyts</h2>
+                <p>
+                As a Cybersecurity Analyst, I specialize in identifying and mitigating security vulnerabilities to protect digital assets
+                using tools like OWASP ZAP and Burp Suite. Skilled in VAPT, API testing, and secure coding, I ensure applications are resilient
+                against cyber threats.
+                </p>
+                <a href="#Contact">
+                    <button>Go</button>
+                </a>
             </motion.div>
         </motion.div>
 

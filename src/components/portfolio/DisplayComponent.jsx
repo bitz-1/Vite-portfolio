@@ -1,24 +1,25 @@
-import "../../scss/displayComponent.scss"
+import "../../scss/displayComponent.scss";
 
-function DisplayComponent({ data }) {
+function DisplayComponent({ data, onClose }) {
     return (
         <div className="displayComponent">
-             <a href="/Latest-work">
-            <div className="butnclose"><button>X</button> </div>
+            <a href="/Latest-work">
+                <div className="butnclose">
+                    <button onClick={onClose}>X</button>
+                </div>
             </a>
             <h2>{data.title}</h2>
-            <img src={data.img}/>
-            <p>Description:<br/> {data.description}</p>
-            Add more details as needed
+            <img src={data.img} alt={data.title} />
+            <p>Description:<br /> {data.description}</p>
+          
             <div className="buttons">
-            <a href={data.gitref}>
-                <button>github</button>
-            </a>
-            <a href={data.hosted}>
-                <button>Live</button>
-            </a>
+                <a href={data.gitref}>
+                    <button>GitHub</button>
+                </a>
+                <a href={data.hosted}>
+                    <button>Live</button>
+                </a>
             </div>
-           
         </div>
     );
 }

@@ -49,7 +49,7 @@ const Hero = () => {
         </motion.div> 
           <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
           <motion.h2 variants={textVariants}>APURV NANDGAONKAR</motion.h2>
-          <motion.h1 variants={textVariants}><span style={{color:'#5b6e74'}}>Software Engineer</span> | Full-Stack Web Developer \- </motion.h1>
+          <motion.h1 variants={textVariants}><span style={{color:'#5b6e74'}}>Software Engineer </span> <span style={{color:'#F75C1E'}}> | VAPT</span>| Full-Stack Web Developer \- </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <Link to="/Latest-work">
            <motion.button whileHover={{scale:1.1}} variants={textVariants}>See the Latest Work</motion.button>

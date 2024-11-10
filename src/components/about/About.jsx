@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "../../scss/about.scss";
 import SkillsList from './SkillsList';
-import { FrontendData, BackendData , DevOpsData, DevSecOpsData } from '../../data';
+import { FrontendData, BackendData , DevOpsData, DevSecOpsData , VAPT} from '../../data';
 
 const About = () => {
     const [selected,setSelected] = useState(localStorage.getItem("selected") || "frontend");
@@ -23,7 +23,11 @@ const About = () => {
         {
             id:"devsecops",
             title:"DevSecOps"
-        }
+        },
+        {
+          id:"vapt",
+          title:"VAPT"
+      }
     ]
 
     
@@ -42,6 +46,9 @@ const About = () => {
                 case "devsecops":
                   setData(DevSecOpsData);
                   break;
+                case "vapt":
+                  setData(VAPT);
+                  break;
               default: 
               setData(FrontendData);
 
@@ -59,13 +66,11 @@ const About = () => {
         <h1>About</h1>
         <br />
         <img src="./profile.jpg" alt="Profile" />
-        <p>Proficient in both front-end and back-end technologies, I specialize
-          in translating creative designs into functional code. I wield a
-          versatile toolkit to create robust and responsive applications. My
-          expertise spans the entire development lifecycle. Whether it's
-          architecting databases for efficiency, implementing intuitive user
-          interfaces, or optimizing server-side performance, I ensure every
-          facet of the project is meticulously crafted.
+        <p>Skilled Developer and Application Tester with expertise in Node.js, Django, and full-stack development. Experienced
+            in building scalable applications, managing databases, and ensuring seamless integration and deployment.
+            Proficient in Vulnerability Assessment and Penetration Testing (VAPT) to identify and mitigate security risks,
+            with strong knowledge of secure coding and compliance standards. Adept at delivering high-performance, secure,
+            and responsive solutions.
         </p>
       </div>
       <div className='skill'>

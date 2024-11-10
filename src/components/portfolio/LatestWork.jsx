@@ -1,10 +1,11 @@
-import React, {  useRef,useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Navbar from '../navbar/Navbar';
 import "../../scss/latestWork.scss";
 import ProjectList from './ProjectList';
 import { featuredData, mobileData, webData, SaasData, businessData } from '../../data';
 import DisplayComponentPage from './DisplayComponentPage';
-import { Link, json } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 const LatestWork = () => {
     const [selected, setSelected] = useState(localStorage.getItem("selected") || "featured");
     const [data, setData] = useState([]);
@@ -12,26 +13,11 @@ const LatestWork = () => {
     const popDivRef = useRef(null);
 
     const list = [
-        {
-            id: "featured",
-            title: "Featured",
-        },
-        {
-            id: "web",
-            title: "Web App",
-        },
-        {
-            id: "mobile",
-            title: "Mobile App",
-        },
-        {
-            id: "business",
-            title: "Business",
-        },
-        {
-            id: "saas",
-            title: "SaaS",
-        },
+        { id: "featured", title: "Featured" },
+        { id: "web", title: "Web App" },
+        { id: "mobile", title: "Mobile App" },
+        { id: "business", title: "Business" },
+        { id: "saas", title: "SaaS" },
     ];
 
     useEffect(() => {
@@ -56,67 +42,60 @@ const LatestWork = () => {
         }
     }, [selected]);
 
-
     useEffect(() => {
         localStorage.setItem('selected', selected);
     }, [selected]);
 
     useEffect(() => {
-        localStorage.setItem("selectedItemData",JSON.stringify(selectedItemData));
-
-    },[selectedItemData])
+        localStorage.setItem("selectedItemData", JSON.stringify(selectedItemData));
+    }, [selectedItemData]);
 
     const handleItemClick = (itemData) => {
-        // Set the selected item's data
         setSelectedItemData(itemData);
-        popDivRef.current.scrollIntoView({ top:document.body.scrollHeight , behavior: 'smooth' });
- };
-
-    
-
-   
+        popDivRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
 
     return (
         <div className='parentDiv'>
-        <section >
-        <div className='latestWork'>
-                <Navbar />
-            <div className='works'>
-                <h1>PROJECTS</h1>
-                <ul>
-                    {list.map(item => (
-                        <ProjectList
-                            title={item.title}
-                            active={selected === item.id}
-                            setSelected={setSelected}
-                            id={item.id}
-                            key={item.id}
-                        />
-                    ))}
-                </ul>
-                <div className="container">
-                    {data.map((d) => (
-                        <Link to={`#${d.id}`} key={d.id} onClick={() => handleItemClick(d)}>
-                            <div className="item" key={d.id}>
-                                <img src={d.img} alt="" />
-                                <h3>{d.title}</h3>
-                            </div>
-                        </Link>
-                    ))}
-                </div> 
-            </div>
-        </div>
-      </section>
-      <section>
-                <div className="popDiv" ref={popDivRef}>
-                <DisplayComponentPage  selectedItemData={selectedItemData} />
+            <section>
+                <div className='latestWork'>
+                    <Navbar />
+                    <div className='works'>
+                        <h1>PROJECTS</h1>
+                        <ul>
+                            {list.map(item => (
+                                <ProjectList
+                                    title={item.title}
+                                    active={selected === item.id}
+                                    setSelected={setSelected}
+                                    id={item.id}
+                                    key={item.id}
+                                />
+                            ))}
+                        </ul>
+                        <div className="container">
+                            {data.map((d) => (
+                                <Link to={`#${d.id}`} key={d.id} onClick={() => handleItemClick(d)}>
+                                    <div className="item" key={d.id}>
+                                        <img src={d.img} alt="" />
+                                        <h3>{d.title}</h3>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
                 </div>
-      </section>
-      </div>
-
+            </section>
+            <section>
+                <div className="popDiv" ref={popDivRef}>
+                    <DisplayComponentPage 
+                        selectedItemData={selectedItemData} 
+                        setSelectedItemData={setSelectedItemData} 
+                    />
+                </div>
+            </section>
+        </div>
     );
 };
-
-
 
 export default LatestWork;

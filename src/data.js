@@ -1,4 +1,32 @@
 export const featuredData = [
+
+  {
+    id: 1,
+    title: "Safe Security Dynamics",
+    img: "./ssd.png",
+    description: "This project is under Client company official website (Safe Security Dynamics) provides advanced, AI-driven license plate recognition solutions to a variety of industries, including law enforcement,This project still on going but you see Frontend work ",
+    gitref:"https://github.com/Safe-Security-Dynamics",
+    hosted:"https://ssd-website-henna.vercel.app/",
+  
+  },
+  {
+    id: 5,
+    title: "License Plate Recognition",
+    img: "./sdd.png",
+    description: "This project is under Client company (Safe Security Dynamics) provides advanced, AI-driven license plate recognition solutions to a variety of industries, including law enforcement,This project still on going but you see Frontend work ",
+    gitref:"https://github.com/Safe-Security-Dynamics",
+    hosted:"https://lpr-seven.vercel.app/",
+  
+  },
+  {
+    id: 5,
+    title: "IPO Management",
+    img: "ipo.jpg",
+    description: "The BlueStock IPO Management System is designed for listing IPOs with full CRUD operations.",
+    gitref:"https://github.com/bitz-1/TEAM12-bluestock-Fintech",
+    hosted:"https://github.com/bitz-1/TEAM12-bluestock-Fintech/",
+  
+  },
     {
       id: 1,
       title: "ERS",
@@ -33,23 +61,39 @@ export const featuredData = [
       gitref:"https://github.com/bitz-1/DAPP",
       hosted:"https://github.com/bitz-1/DAPP"
     },
-    {
-      id: 5,
-      title: "Hero Web Design",
-      img:
-        "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 6,
-      title: "Banking App",
-      img:
-        "https://cdn.dribbble.com/users/3307260/screenshots/15468444/media/447b4501f7a145b05e11c70199a9c417.jpg?compress=1&resize=1200x900",
-    },
+   
   ];
   
   export const webData = [
     {
       id: 1,
+      title: "Safe Security Dynamics",
+      img: "./ssd.png",
+      description: "This project is under Client company official website (Safe Security Dynamics) provides advanced, AI-driven license plate recognition solutions to a variety of industries, including law enforcement,This project still on going but you see Frontend work ",
+      gitref:"https://github.com/Safe-Security-Dynamics",
+      hosted:"https://ssd-website-henna.vercel.app/",
+    
+    },
+    {
+      id: 1,
+      title: "License Plate Recognition",
+      img: "./sdd.png",
+      description: "This project is under Client company (Safe Security Dynamics) provides advanced, AI-driven license plate recognition solutions to a variety of industries, including law enforcement,This project still on going but you see Frontend work ",
+      gitref:"https://github.com/Safe-Security-Dynamics",
+      hosted:"https://lpr-seven.vercel.app/",
+    
+    },
+    {
+      id: 5,
+      title: "IPO Management",
+      img: "./ipo.jpg",
+      description: "The BlueStock IPO Management System is designed for listing IPOs with full CRUD operations.",
+      gitref:"https://github.com/bitz-1/TEAM12-bluestock-Fintech",
+      hosted:"https://github.com/bitz-1/TEAM12-bluestock-Fintech/",
+    
+    },
+    {
+      id: 5,
       title: "ERS",
       img: "./ers.jpg",
       description: "This is a full-stack web application called Employee Review System (ERS). Built using Node.js, Express.js, MongoDB, Passport.js, and Passport-local for authentication The application follows the MVC structure.Password for new Admin - ghostAplha",
@@ -82,16 +126,7 @@ export const featuredData = [
       gitref:"https://github.com/bitz-1/DAPP",
       hosted:"https://github.com/bitz-1/DAPP"
     },
-    {
-      id: 5,
-      title: "Web Design",
-      img: "https://cdn.dribbble.com/users/387658/screenshots/15458608/media/e92ec1dd33dd1170ae3dc9c5272f2693.jpg?compress=1&resize=1200x900",
-    },
-    {
-      id: 6,
-      title: "Web Banking App",
-      img: "https://cdn.dribbble.com/users/6384483/screenshots/15468426/media/ce9479fa1f8dba3a4a49840d76e55e31.png?compress=1&resize=1200x900",
-    },
+    
   ];
   
   export const mobileData = [
@@ -100,9 +135,55 @@ export const featuredData = [
   
   export const SaasData = [
    
+    {
+      id: 1,
+      title: "License Plate Recognition",
+      img: "./sdd.png",
+      description: "This project is under Client company (Safe Security Dynamics) provides advanced, AI-driven license plate recognition solutions to a variety of industries, including law enforcement,This project still on going but you see Frontend work ",
+      gitref:"https://github.com/Safe-Security-Dynamics",
+      hosted:"https://lpr-seven.vercel.app/",
+    
+    },
+    {
+      id: 5,
+      title: "IPO Management",
+      img: "./ipo.jpg",
+      description: "The BlueStock IPO Management System is designed for listing IPOs with full CRUD operations.",
+      gitref:"https://github.com/bitz-1/TEAM12-bluestock-Fintech",
+      hosted:"https://github.com/bitz-1/TEAM12-bluestock-Fintech/",
+    
+    },
+   
   ];
   
   export const businessData = [
+    {
+      id: 1,
+      title: "Safe Security Dynamics",
+      img: "./ssd.png",
+      description: "This project is under Client company official website (Safe Security Dynamics) provides advanced, AI-driven license plate recognition solutions to a variety of industries, including law enforcement,This project still on going but you see Frontend work ",
+      gitref:"https://github.com/Safe-Security-Dynamics",
+      hosted:"https://ssd-website-henna.vercel.app/",
+    
+    },
+    {
+      id: 1,
+      title: "License Plate Recognition",
+      img: "./sdd.png",
+      description: "This project is under Client company (Safe Security Dynamics) provides advanced, AI-driven license plate recognition solutions to a variety of industries, including law enforcement,This project still on going but you see Frontend work ",
+      gitref:"https://github.com/Safe-Security-Dynamics",
+      hosted:"https://lpr-seven.vercel.app/",
+    
+    },
+    {
+      id: 5,
+      title: "IPO Management",
+      img: "./ipo.jpg",
+      description: "The BlueStock IPO Management System is designed for listing IPOs with full CRUD operations.",
+      gitref:"https://github.com/bitz-1/TEAM12-bluestock-Fintech",
+      hosted:"https://github.com/bitz-1/TEAM12-bluestock-Fintech/",
+    
+    },
     
   ];
 
@@ -264,4 +345,42 @@ export const featuredData = [
       title:"Owasp ZAP",
       img:"./owaspzap.png"
     },
+  ]
+
+  export const VAPT = [
+    {
+      id:1,
+      title:"Burp Suite",
+      img:""
+    },
+    {
+      id:2,
+      title:"Owasp ZAP",
+      img:"./owaspzap.png"
+    },
+    {
+      id:3,
+      title:"Nmap",
+      img:""
+    },
+    {
+      id:4,
+      title:"Metasploit",
+      img:""
+    },
+    {
+      id:5,
+      title:"SonarQube",
+      img:""
+    },
+    {
+      id:6,
+      title:"Nikto",
+      img:""
+    },
+    {
+    id:7,
+    title:"W3af",
+    img:""
+    }
   ]
